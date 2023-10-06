@@ -1,0 +1,13 @@
+[workspace]
+name = "cairo-primitives"
+version = "0.1.0"
+author = "Satyam Bansal <satyambnsal@gmail.com>"
+description = "Reimplementation of alexandria package for learning and experimental purpose"
+homepage = "https://github.com/satyambnsal/cairo-primitives"
+
+members = ["src/ascii"]
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[workspace.dependencies]
+# foo = { path = "vendor/foo" }
+alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria.git", tag = "cairo-v2.1.0" }
