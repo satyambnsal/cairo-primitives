@@ -3,6 +3,27 @@ use cairo_primitives_ascii::ToAsciiTrait;
 use integer::BoundedInt;
 
 
+
+#[test]
+#[available_gas(20000000)]
+fn u256_to_ascii() {
+
+    // max 256 int in cairo: 115792089237316195423570985008687907853269984665640564039457584007913129639935
+
+    let num: u256 = BoundedInt::max();
+    let ascii_arr: Array<felt252> = num.to_ascii();
+
+    assert(ascii_arr.len() == 3, 'max u256 wrong length');
+    assert(*ascii_arr.at(0) == '1157920892373161954235709850086', 'max u256 wrong first felt');
+    assert(*ascii_arr.at(1) == '8790785326998466564056403945758', 'max u256 wrong second felt');
+    assert(*ascii_arr.at(2) == '4007913129639935', 'max u256 wrong third felt');
+
+    let num:u256 = BoundedInt::min();
+    let ascii: Array<felt252> = num.to_ascii();
+    assert(ascii.len() == 1, 'min u256 wrong len');
+    assert(*ascii.at(0) == '0', 'min u256 wrong felt');
+}
+
 #[test]
 #[available_gas(20000000)]
 fn u128_to_ascii() {
