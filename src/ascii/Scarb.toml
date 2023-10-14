@@ -1,5 +1,5 @@
 [package]
-name = "satyam_ascii"
+name = "cairo_primitives_ascii"
 version = "0.1.0"
 description = "utilities for working with ascii values"
 

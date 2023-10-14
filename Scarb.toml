@@ -1,5 +1,5 @@
 [workspace]
-name = "cairo-primitives"
+name = "cairo_primitives"
 version = "0.1.0"
 author = "Satyam Bansal <satyambnsal@gmail.com>"
 description = "Reimplementation of alexandria package for learning and experimental purpose"
