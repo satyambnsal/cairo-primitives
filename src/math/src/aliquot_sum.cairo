@@ -1,7 +1,5 @@
-
-
 fn aliquot_sum(number: u128) -> u128 {
-    if number == 0 || number == 1{
+    if number == 0 || number == 1 {
         return 0;
     }
 
@@ -13,10 +11,9 @@ fn aliquot_sum(number: u128) -> u128 {
         if index == limit {
             break res;
         }
-
         if number % index == 0 {
             res += index;
         }
-        index +=1 ;
+        index += 1;
     }
 }
