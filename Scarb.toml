@@ -5,7 +5,7 @@ author = "Satyam Bansal <satyambnsal@gmail.com>"
 description = "Reimplementation of alexandria package for learning and experimental purpose"
 homepage = "https://github.com/satyambnsal/cairo-primitives"
 
-members = ["src/ascii"]
+members = ["src/ascii", 'src/math']
 # See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
 
 [workspace.dependencies]

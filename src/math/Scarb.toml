@@ -1,0 +1,8 @@
+[package]
+name = "cairo_primitives_math"
+version = "0.1.0"
+description = "utilities for working with math functions"
+
+[dependencies]
+# alexandria_data_structures = { path = "../data_structures" }
+# alexandria_math = { git = "https://github.com/keep-starknet-strange/alexandria.git", tag = "cairo-v2.1.0" }
